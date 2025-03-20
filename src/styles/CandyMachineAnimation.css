@@ -1,0 +1,54 @@
+.machine-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .machine {
+    width: 150px;
+    height: 200px;
+    background: #ddd;
+    border-radius: 10px;
+    position: relative;
+    border: 3px solid #555;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+  }
+  
+  .coin {
+    width: 20px;
+    height: 20px;
+    background: gold;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: dropCoin 1.5s forwards;
+  }
+  
+  .candy {
+    width: 30px;
+    height: 30px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: dropCandy 1s forwards;
+  }
+  
+  @keyframes dropCoin {
+    0% { top: -20px; }
+    100% { top: 80px; }
+  }
+  
+  @keyframes dropCandy {
+    0% { bottom: -30px; }
+    100% { bottom: 10px; }
+  }
+  

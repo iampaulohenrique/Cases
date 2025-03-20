@@ -1,0 +1,23 @@
+.character {
+    width: 50px;
+    height: 80px;
+    background: url("../assets/character.png") no-repeat center;
+    background-size: contain;
+    position: relative;
+  }
+  
+  .character.animate {
+    animation: moveToMachine 2s ease-in-out forwards;
+  }
+  
+  @keyframes moveToMachine {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(50px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .btn-warning {
+    width: 100%;
+    max-width: 200px;
+  }
+  
