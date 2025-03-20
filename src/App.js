@@ -15,7 +15,7 @@ function MyButton({ name, path, }) {
 function Home() {
   return (
     <div className="container text-center">
-      <h1 className="my-4">Bem-vindo à minha máquina de doces</h1>
+      <h1 className="my-4">Escolha à maquina de doces</h1>
       <div className="row">
         
         <MyButton name="Máquina 1" path="/maquina1"  />
@@ -39,6 +39,7 @@ function Maquina1() {
   return (
     <div className="container text-center">
       <h2 className="my-4">Bem-vindo à Máquina 1</h2>
+      <h2 className="my-5">Compre seu doce usando suas moedas!</h2>
       <BackButton />
     </div>
   );
@@ -48,6 +49,7 @@ function Maquina2() {
   return (
     <div className="container text-center">
       <h2 className="my-4">Bem-vindo à Máquina 2</h2>
+      <h2 className="my-5">Compre seu doce usando suas moeda!s</h2>
       <BackButton />
     </div>
   );
