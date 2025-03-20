@@ -15,7 +15,7 @@ function MyButton({ name, path, }) {
 function Home() {
   return (
     <div className="container text-center">
-      <h1 className="my-4">Escolha à maquina de doces</h1>
+      <h1 className="my-4">Escolha à maquina de doces!</h1>
       <div className="row">
         
         <MyButton name="Máquina 1" path="/maquina1"  />
