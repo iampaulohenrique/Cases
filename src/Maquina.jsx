@@ -65,7 +65,7 @@ function Maquina({ nome }) {
       </div>
 
       {mensagem && <p className="alert alert-info mt-3"><strong>{mensagem}</strong></p>}
-      
+
       <CandyMachineAnimation showCandy={showCandy} />
 
       <button className="btn btn-secondary mt-4" onClick={() => window.history.back()}>

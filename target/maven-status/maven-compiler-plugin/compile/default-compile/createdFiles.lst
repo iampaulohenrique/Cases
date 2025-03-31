@@ -1,0 +1,7 @@
+com\example\maquina_de_comida\WebConfig.class
+com\example\maquina_de_comida\ServidorApplication.class
+com\example\maquina_de_comida\DoceDTO.class
+com\example\maquina_de_comida\Maquina.class
+com\example\maquina_de_comida\DoceController.class
+com\example\maquina_de_comida\ServidorController.class
+com\example\maquina_de_comida\MoedaDTO.class

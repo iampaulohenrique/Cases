@@ -133,7 +133,7 @@ export default function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/maquina1" element={<Maquina nome="Máquina 1" />} />
+        <Route path="/maquina1" element={<Maquina nome="maquina1" />} />
       </Routes>
     </Router>
   );
