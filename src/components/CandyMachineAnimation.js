@@ -5,15 +5,9 @@ const CandyMachineAnimation = ({ saldo, doceEscolhido }) => {
   const [showCoin, setShowCoin] = useState(false);
   const [showCandy, setShowCandy] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
-  const [isPurchaseButtonDisabled, setIsPurchaseButtonDisabled] = useState(true);
 
   useEffect(() => {
-    const precoDoce = doceEscolhido === "A" ? 6 : doceEscolhido === "B" ? 7 : doceEscolhido === "C" ? 8 : 0;
-    if (saldo >= precoDoce && doceEscolhido) {
-      setIsPurchaseButtonDisabled(false);
-    } else {
-      setIsPurchaseButtonDisabled(true);
-    }
+ 
   }, [saldo, doceEscolhido]);
 
   const insertCoin = () => {
@@ -47,10 +41,10 @@ const CandyMachineAnimation = ({ saldo, doceEscolhido }) => {
         {showCandy && <div className="candy"></div>}
       </div>
 
+      {}
       <button
         className="btn btn-success mt-3"
         onClick={insertCoin}
-        disabled={isPurchaseButtonDisabled}
       >
         Finalizar compra
       </button>
